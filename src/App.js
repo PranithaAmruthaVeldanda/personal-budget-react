@@ -1,46 +1,43 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
+import './App.css';
+import axios from 'axios';
+
+import Menu from './Menu/Menu';
+import Hero from './Hero/Hero';
+import HomePage from './HomePage/HomePage';
+import Footer from './Footer/Footer'
+import LoginPage from './LoginPage/LoginPage';
+import AboutPage from './AboutPage/AboutPage';
+import AxiosPie from './AxiosPie/AxiosPie';
+
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
+  Route
 } from "react-router-dom";
-
-import './App.css';
-
-import Menu from './Menu/Menu';
-import HomePage from './HomePage/HomePage';
-import Hero from './Hero/Hero';
-import LoginPage from './LoginPage/LoginPage'
-import Footer from './Footer/Footer';
-import AboutPage from './AboutPage/AboutPage';
 
 
 
 function App() {
+
   return (
     <Router>
-      <Menu/>
+      <Menu />
       <Hero/>
       <div className="mainContainer">
         <Switch>
           <Route path="/about">
-             <AboutPage/>
+            <AboutPage/>
           </Route>
-
           <Route path="/login">
-             <LoginPage/>
-          </Route>
-
+            <LoginPage/>
+          </Route>         
           <Route path="/">
-             <HomePage/>
+            <HomePage/>
           </Route>
-
         </Switch>
-
-      </div>
-      
+      </div>   
       <Footer/>
-
     </Router>
   );
 }
