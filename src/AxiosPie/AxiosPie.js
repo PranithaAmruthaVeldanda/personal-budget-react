@@ -12,8 +12,8 @@ const AxiosPie = () =>{
         let eBudget = []
         Axios.get("http://localhost:5000/budget")
              .then(res =>{
-                 console.log(res);
-                 for(const dataObj of res.data){
+                
+                 for(const dataObj of res.data.myBudget){
                     eTitle.push(dataObj.title);
                     eBudget.push(dataObj.budget);
                  }
@@ -38,9 +38,9 @@ const AxiosPie = () =>{
                 })
              })
              .catch(e => {
-                 console.log(e)
+                
              }) 
-             console.log(eTitle, eBudget)            
+                    
         
     }
 

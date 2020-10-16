@@ -1,7 +1,8 @@
-[
+{
+  "myBudget":[
     {
       "title": "Eat out",
-      "budget": 30
+      "budget": 80
     },
     {
         "title": "Rent",
@@ -17,7 +18,7 @@
       },
       {
         "title": "Groceries",
-        "budget": 80
+        "budget": 200
       },
       {
         "title": "Shopping",
@@ -28,3 +29,5 @@
         "budget": 100
       }
     ]
+}
+  

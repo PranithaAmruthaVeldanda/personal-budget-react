@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import './App.css';
 import axios from 'axios';
+import d3 from 'd3';
 
 import Menu from './Menu/Menu';
 import Hero from './Hero/Hero';
@@ -9,6 +10,7 @@ import Footer from './Footer/Footer'
 import LoginPage from './LoginPage/LoginPage';
 import AboutPage from './AboutPage/AboutPage';
 import AxiosPie from './AxiosPie/AxiosPie';
+import PieChart from './PieChart/PieChart';
 
 import {
   BrowserRouter as Router,
@@ -24,7 +26,7 @@ function App() {
     <Router>
       <Menu />
       <Hero/>
-      <div className="mainContainer">
+      <div className="mainContainer">   
         <Switch>
           <Route path="/about">
             <AboutPage/>
@@ -36,7 +38,8 @@ function App() {
             <HomePage/>
           </Route>
         </Switch>
-      </div>   
+        </div>
+      
       <Footer/>
     </Router>
   );
