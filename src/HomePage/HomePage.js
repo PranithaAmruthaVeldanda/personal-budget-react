@@ -6,7 +6,7 @@ import PieChart from '../PieChart/PieChart';
 
 function HomePage() {
   return (
-    <main class="container center">
+    <main className="container center">
         <div  id ="main"> 
         <div class="page-area">
                       
