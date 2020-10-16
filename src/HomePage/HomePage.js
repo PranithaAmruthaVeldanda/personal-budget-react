@@ -5,9 +5,9 @@ import AxiosPie from '../AxiosPie/AxiosPie'
 
 function HomePage() {
   return (
-    <div className="container center">
-
-        <div className="page-area" id="maincontent">
+    <main class="container center">
+        <div  id ="main"> 
+        <div class="page-area">
                       
             <article>
                 <h2>Stay on track</h2>
@@ -55,8 +55,9 @@ function HomePage() {
             </article>             
 
         </div>
-
-    </div>   
+        </div> 
+     </main>
+      
   );
 }
 
