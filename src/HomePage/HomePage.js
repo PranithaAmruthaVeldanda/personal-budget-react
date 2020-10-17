@@ -8,7 +8,7 @@ function HomePage() {
   return (
     <main className="container center">
         <div  id ="main"> 
-        <div class="page-area">
+        <div className="page-area">
                       
             <article>
                 <h2>Stay on track</h2>
